@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, Image, RefreshControl, ScrollView } from 'react-native'
 import axios from "axios";
-import { Video } from 'expo';
+import { Video } from 'expo-av'
 
 class showVideos extends Component {
 
@@ -38,17 +38,14 @@ class showVideos extends Component {
                   />
                 }
             >
-                {
-                    this.state.videos.map((video,key) => 
+          
                         <Video 
-                            key={video._id}
-                            source={{ uri: video.Video }} 
+                            source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'  }} 
                             shouldPlay
                             resizeMode="cover"
                             style={{ width:390, height: 300 }}
                         />
-                    )
-               }
+            
             </ScrollView>
         )
     }

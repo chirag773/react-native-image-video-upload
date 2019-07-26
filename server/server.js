@@ -9,8 +9,8 @@ const Image             = require("./routes/api/Image");
 
  cloudinary.config({ 
  cloud_name: 'private1', 
- api_key: '745187248568767', 
- api_secret: 'PqKDbZ_YzGi-SsWC5zRkLwHdmIc' 
+ api_key: 'Your-api', 
+ api_secret: 'Your-secret' 
  }); 
 
 
